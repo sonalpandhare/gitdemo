@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student Registration </h1>
+
+    Enetr name : <input type="text" id="name">
+    <br><br>
+
+    Enter Email : <input type="email" id="email">
+    <br><br>
+
+    Enter course : <input type="text" id="course">
+    <br><br>
+
+    Enter fee : <input type="number" id="fee" >
+    <br><br>
+
+    <h2 id="result">result : </h2>
+    
+
+
+    <button onclick="registerstudent()">Submit</button>
+
+
+
+    <script>
+
+function registerstudent() {
+    let student = {
+
+        name : "",
+        email :"",
+        course : "",
+        fee : 0,
+        // deposit : [],
+    }; 
+
+    student.name = document.getElementById("name").value;
+    student.email = document.getElementById("email").value;
+
+    student.course = document.getElementById("course").value;
+    student.fee = Number(document.getElementById("fee").value);
+
+// student.deposit = Number(document.getElementById("deposit").value);
+    document.getElementById("result").innerText =
+        "Your registration is successfully completed !!" 
+        
+       
+}
+
+
+    </script>
+
+
+</body>
+
+</html>
